@@ -5,13 +5,22 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui">
     <head>
         <title>TODO supply a title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
         <div>Hola Mundo! </div>
+        
+        <div> 
+            
+            Usuario:<p:inputText value="#{loginController.usuario}" />
+            <br/>
+            Contraseña:<p:password value="#{loginController.password}" />
+            
+        </div>
         
     </body>
 </html>
