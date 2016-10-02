@@ -10,3 +10,7 @@ and open the template in the editor.
 #contPrincipal{
     min-height: 800px;
 }
+#cars{
+    min-height: 800px;
+    width: 100%;
+}
