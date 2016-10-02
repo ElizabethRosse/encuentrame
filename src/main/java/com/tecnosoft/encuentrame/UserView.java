@@ -9,7 +9,6 @@ package com.tecnosoft.encuentrame;
  *
  * @author roy
  */
- 
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
@@ -17,28 +16,27 @@ import javax.faces.context.FacesContext;
 @ManagedBean
 public class UserView {
      
-    private String usuario;
-    private String contrasena;
+    private String firstname;
+    private String lastname;
  
-    public String getUsuario() {
-        return usuario;
+    public String getFirstname() {
+        return firstname;
     }
  
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
  
-    public String getContrasena() {
-        return contrasena;
+    public String getLastname() {
+        return lastname;
     }
  
-    public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
  
     public void save() {
         FacesContext.getCurrentInstance().addMessage(null,
-                new FacesMessage( "Welcome " +usuario +" "));
+                new FacesMessage("Welcome " + firstname + " " + lastname));
     }
 }
-
