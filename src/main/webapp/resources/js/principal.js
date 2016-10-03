@@ -19,4 +19,7 @@ function cargaLogin() {
 function cargaNuevaPublicacion() {
     $('#contPrincipal').load('contenidos.xhtml div#contNuevaPublicacion');
 }
+function cargaPublicacion() {
+    $('#contPrincipal').load('index.xhtml div#buscadorPublic');
+}
 

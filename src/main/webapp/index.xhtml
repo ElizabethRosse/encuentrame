@@ -35,7 +35,7 @@ and open the template in the editor.
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" onclick="cargaPublicacion()" style="color:white">
                         ¡Encuentrame!
                     </a>
 
@@ -55,12 +55,14 @@ and open the template in the editor.
                                     <p:messages id="msgs" />
                                 </f:facet>
 
-                                <p:outputLabel for="firstname" value="Usuario:" style="color:white"/>
+                                <p:outputLabel for="firstname" value="Usuario:" style="color:white;
+                                                                                       font-size: 13px"/>
                                 <p:inputText id="firstname" value="#{userView.firstname}">
                                     <f:validateLength minimum="2" />
                                 </p:inputText>
 
-                                <p:outputLabel for="surname" value="Contraseña:" style="color:white" />
+                                <p:outputLabel for="surname" value="Contraseña:" style="color:white;
+                                                                                        font-size: 13px " />
                                 <p:password id="surname" value="#{userView.lastname}" required="true" requiredMessage="Surname is required.">
                                     <f:validateLength minimum="8"/>
                                 </p:password>
